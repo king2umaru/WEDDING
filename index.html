@@ -1,21 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>WEDDING</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jozif Photography</title>
 
-  <!-- Font Awesome 5 -->
-  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+
+
+   <style>
+
+  body {
+       font-family: "Montserrat", sans-serif;
+       background-color: #f8f9fa;
+     }
+
+     /* Navbar */
+     .navbar {
+       background: #111; /* dark navbar */
+     }
+     .navbar .nav-link,
+     .navbar .navbar-brand {
+       color: #fff !important;
+       font-weight: 600;
+     }
+     .navbar .nav-link:hover {
+       color: #ffc107 !important; /* gold hover effect */
+     }
+
+     /* Instagram grid */
+     .insta-img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       aspect-ratio: 1 / 1; /* makes all images square */
+       transition: transform 0.3s ease-in-out;
+     }
+     .insta-img:hover {
+       transform: scale(1.05); /* zoom effect */
+     }
+
+     .insta-grid {
+       gap: 15px; /* spacing between images */
+     }
+
+     h1 {
+       font-weight: 700;
+       margin-top: 120px; /* spacing below navbar */
+     }
+   </style>
+
+
+
+
+
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
+  <!-- Custom Navbar CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- ===== Navbar ===== -->
-  <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+  <nav class="navbar navbar-expand-lg ">
     <a class="navbar-brand" href="#">Jozif Photography</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +76,8 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a class="nav-link" href="https://king2umaru.github.io/jozif-photography/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="https://king2umaru.github.io/About/">About</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
 
         <!-- Dropdown -->
         <li class="nav-item dropdown">
@@ -48,64 +100,50 @@
     </div>
   </nav>
 
-
-<br>
-<br>
-<br>
-
-  <!-- Gallery Section -->
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">WEDDINGS</h2>
-    <div class="row">
-
-      <!-- Wedding One -->
-      <div class="col-md-4 col-sm-12">
-        <a href="https://king2umaru.github.io/wedding-one/" target="_blank">
-          <img src="wedding-one.jpg" class="insta-img" alt="Wedding One">
-        </a>
-      </div>
-
-      <!-- Wedding Two -->
-      <div class="col-md-4 col-sm-12">
-        <a href="wedding/wedding two.jpg" target="_blank">
-          <img src="wedding-two.jpg" class="insta-img" alt="Wedding Two">
-        </a>
-      </div>
-
-      <!-- Wedding Three -->
-      <div class="col-md-4 col-sm-12">
-        <a href="wedding/wedding three.jpg" target="_blank">
-          <img src="wedding-three.jpg" class="insta-img" alt="Wedding Three">
-        </a>
-      </div>
-
-      <!-- Wedding Four -->
-      <div class="col-md-4 col-sm-12">
-        <a href="wedding/wedding four.jpg" target="_blank">
-          <img src="wedding-four.jpg" class="insta-img" alt="Wedding Four">
-        </a>
-      </div>
-
-      <!-- Wedding Five -->
-      <div class="col-md-4 col-sm-12">
-        <a href="wedding/wedding five.jpg" target="_blank">
-          <img src="wedding-five.jpg" class="insta-img" alt="Wedding Five">
-        </a>
-      </div>
-
-      <!-- Wedding Six -->
-      <div class="col-md-4 col-sm-12">
-        <a href="wedding/wedding six.jpg" target="_blank">
-          <img src="wedding-six.jpg" class="insta-img" alt="Wedding Six">
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<h1 class="text-center"> WEDDINGS</h1>
+
+
+<div class="container my-5">
+  <div class="row insta-grid">
+
+    <!-- Image 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+      <a href="https://king2umaru.github.io/wedding-one/">
+      <img src="wedding-one.jpg" alt="Instagram Photo" class="insta-img rounded">
+</a>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+    <a href="https://king2umaru.github.io/wedding-six/">  <img src="wedding-two.jpg" alt="Instagram Photo" class="insta-img rounded">
+    </a></div>
+
+    <!-- Image 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+    <a href="https://king2umaru.github.io/weeding-two/"> <img src="wedding-three.jpg" alt="Instagram Photo" class="insta-img rounded">
+</a>
+    </div>
+
+    <!-- Image 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+    <a href="https://king2umaru.github.io/wedding-four/">  <img src="wedding-four.jpg" alt="Instagram Photo" class="insta-img rounded">
+  </a>  </div>
+
+    <!-- Image 5 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+    <a href="https://king2umaru.github.io/wedding-five/">  <img src="wedding-five.jpg" alt="Instagram Photo" class="insta-img rounded">
+    </a></div>
+
+    <!-- Image 6 -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+  <a href="https://king2umaru.github.io/wedding-seven/">    <img src="wedding-six.jpg" alt="Instagram Photo" class="insta-img rounded">
+  </a>  </div>
+
 
 </body>
 </html>

@@ -1,67 +1,87 @@
-body {
-  background: #fafafa;
-}
-.insta-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.insta-img:hover {
-  transform: scale(1.05);
-}
-/* ===== Transparent Navbar ===== */
+/* ===== Navbar Base ===== */
 .navbar {
-  background: rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.8); /* Dark background with slight transparency */
+  backdrop-filter: blur(5px);
   padding: 1rem 2rem;
-  transition: background 0.3s ease;
-  z-index: 1000;
+  font-family: "Montserrat", sans-serif;
 }
 
-.navbar-brand {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff !important;
-}
-
-.navbar-nav .nav-link {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #fff !important;
-  padding: 0.8rem 1.2rem;
+.navbar .nav-link {
+  color: #fff !important; /* White links */
   transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-  color: #ffd700 !important;
+.navbar .nav-link:hover {
+  color: #f39c12 !important; /* Gold highlight on hover */
 }
 
-/* ===== Burger button fix ===== */
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* ===== Toggler ===== */
 .navbar-toggler {
   border: none;
   outline: none;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  font-size: 2rem;
+  color: #111;
 }
 
-/* ===== Mobile Navbar ===== */
+/* ===== Mobile Styles ===== */
 @media (max-width: 991.98px) {
-  .navbar-collapse {
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 8px;
+  .navbar {
     padding: 1rem;
   }
 
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
   .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 1rem;
     text-align: center;
-    display: block;
-    color: #fff !important;
-    font-size: 1.3rem;
+  }
+
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 1rem;
   }
 }
+
+/* ===== Very Small Phones ===== */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 0.9rem;
+  }
+
+    /* Instagram grid */
+    .insta-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 1 / 1; /* makes all images square */
+      transition: transform 0.3s ease-in-out;
+    }
+    .insta-img:hover {
+      transform: scale(1.05); /* zoom effect */
+    }
+
+    .insta-grid {
+      gap: 15px; /* spacing between images */
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-top: 120px; /* spacing below navbar */
+    }
