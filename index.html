@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>WEDDING</title>
+    <link rel="stylesheet" href="css/style.css">
 
   <!-- Font Awesome 5 -->
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
@@ -10,58 +11,47 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-  <style>
-    body {
-      background: #fafafa;
-    }
-    .insta-img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .insta-img:hover {
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand text-white" href="#">Jozif Photography</a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Jozif Photography</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">&#9776;</span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active"><a class="nav-link text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="https://king2umaru.github.io/jozif-photography/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://king2umaru.github.io/About/">About</a></li>
 
-        <!-- Portfolio with Dropdown -->
+        <!-- Dropdown -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
             Portfolio
           </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Wedding</a>
+          <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
+            <a class="dropdown-item" href="https://king2umaru.github.io/WEDDING/">Wedding</a>
             <a class="dropdown-item" href="#">Lifestyle</a>
             <a class="dropdown-item" href="#">Portraits</a>
             <a class="dropdown-item" href="#">Fashion</a>
           </div>
         </li>
 
-        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Learn</a></li>
       </ul>
     </div>
   </nav>
+
+
+<br>
+<br>
+<br>
 
   <!-- Gallery Section -->
   <div class="container mt-5">
@@ -69,42 +59,42 @@
     <div class="row">
 
       <!-- Wedding One -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <a href="https://king2umaru.github.io/wedding-one/" target="_blank">
           <img src="wedding-one.jpg" class="insta-img" alt="Wedding One">
         </a>
       </div>
 
       <!-- Wedding Two -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <a href="wedding/wedding two.jpg" target="_blank">
           <img src="wedding-two.jpg" class="insta-img" alt="Wedding Two">
         </a>
       </div>
 
       <!-- Wedding Three -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <a href="wedding/wedding three.jpg" target="_blank">
           <img src="wedding-three.jpg" class="insta-img" alt="Wedding Three">
         </a>
       </div>
 
       <!-- Wedding Four -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <a href="wedding/wedding four.jpg" target="_blank">
           <img src="wedding-four.jpg" class="insta-img" alt="Wedding Four">
         </a>
       </div>
 
       <!-- Wedding Five -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <a href="wedding/wedding five.jpg" target="_blank">
           <img src="wedding-five.jpg" class="insta-img" alt="Wedding Five">
         </a>
       </div>
 
       <!-- Wedding Six -->
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <a href="wedding/wedding six.jpg" target="_blank">
           <img src="wedding-six.jpg" class="insta-img" alt="Wedding Six">
         </a>
