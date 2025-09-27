@@ -1,72 +1,121 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
+  <meta charset="utf-8">
+  <title>WEDDING</title>
 
+  <!-- Font Awesome 5 -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 
-    <!-- 👇 This line is SUPER important for mobile -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
+  <style>
+    body {
+      background: #fafafa;
+    }
+    .insta-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .insta-img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand text-white" href="#">Jozif Photography</a>
 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <title> Wedding Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="favicon.ico">
-  </head>
-  <body>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
 
-<div class="container-one">
+        <!-- Portfolio with Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Portfolio
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Wedding</a>
+            <a class="dropdown-item" href="#">Lifestyle</a>
+            <a class="dropdown-item" href="#">Portraits</a>
+            <a class="dropdown-item" href="#">Fashion</a>
+          </div>
+        </li>
 
+        <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="heading-one"><h1 class="Home"> <a href="https://king2umaru.github.io/jozif-photography/"> Home</h1></a></div>
-        <div class="heading-two"><h1 class="About">About</h1></div>
-        <div class="heading-three"> <h1 class="portfolio"><a href="https://king2umaru.github.io/jozif-photography-portfolio/">Portfolio</h1></a></div>
-        <div class="heading-four"><h1 class="jozif">Jozif Photography</h1></div>
-        <div class="heading-five"><h1 class="Contact">Contact</h1></div>
-        <div class="heading-six"><h1 class="Blog">Blog</h1></div>
-        <div class="heading-seven"><h1 class="Learn">Learn</h1></div>
+  <!-- Gallery Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">WEDDINGS</h2>
+    <div class="row">
 
-</div>
-<h1 class="first-heading">WEDDINGS</h1
-<br>
+      <!-- Wedding One -->
+      <div class="col-md-4 col-sm-6">
+        <a href="https://king2umaru.github.io/wedding-one/" target="_blank">
+          <img src="wedding-one.jpg" class="insta-img" alt="Wedding One">
+        </a>
+      </div>
 
+      <!-- Wedding Two -->
+      <div class="col-md-4 col-sm-6">
+        <a href="wedding/wedding two.jpg" target="_blank">
+          <img src="wedding-two.jpg" class="insta-img" alt="Wedding Two">
+        </a>
+      </div>
 
-<div class="grid">
-  <a href="https://king2umaru.github.io/wedding-one/"> <img src="wedding-one.jpg" alt="My photo 1" class="zoom"></a>
-<a href="https://king2umaru.github.io/weeding-two/">  <img src="wedding-three.jpg" alt="My photo 3" class="zoom"></a>
-<a href="https://king2umaru.github.io/wedding-three/">  <img src="wedding-two.jpg" alt="My photo 2" class="zoom"></a>
-<a href="https://king2umaru.github.io/wedding-four/"> <img src="wedding-four.jpg" alt="My photo 4" class="zoom"></a>
-  <a href="https://king2umaru.github.io/wedding-five/"> <img src="wedding-five.jpg" alt="My photo 5" class="zoom"></a>
-</div>
+      <!-- Wedding Three -->
+      <div class="col-md-4 col-sm-6">
+        <a href="wedding/wedding three.jpg" target="_blank">
+          <img src="wedding-three.jpg" class="insta-img" alt="Wedding Three">
+        </a>
+      </div>
 
+      <!-- Wedding Four -->
+      <div class="col-md-4 col-sm-6">
+        <a href="wedding/wedding four.jpg" target="_blank">
+          <img src="wedding-four.jpg" class="insta-img" alt="Wedding Four">
+        </a>
+      </div>
 
-<div class="container-four">
-  <ul>
-<li><h1 class="Home-two"> <a href="https://king2umaru.github.io/jozif-photography/">Home</a></h1></li>
-    <li><h1 class="About-two">About</h1></li>
-    <li><h1 class="Portfolio-two"> <a href="https://king2umaru.github.io/jozif-photography-portfolio/">Portfolio</a> </h1></li>
-  </ul>
-</div>
+      <!-- Wedding Five -->
+      <div class="col-md-4 col-sm-6">
+        <a href="wedding/wedding five.jpg" target="_blank">
+          <img src="wedding-five.jpg" class="insta-img" alt="Wedding Five">
+        </a>
+      </div>
 
-<div class="container-five">
-  <ul>
-    <li><h1 class="Contact-two"> <a href="https://king2umaru.github.io/jozif-photography-portfolio/"></a> Contact</h1></li>
-    <li><h1 class="Blog-two">Blog</h1></li>
-    <li><h1 class="Learn-two">Learn</h1></li>
-  </ul>
-</div>
+      <!-- Wedding Six -->
+      <div class="col-md-4 col-sm-6">
+        <a href="wedding/wedding six.jpg" target="_blank">
+          <img src="wedding-six.jpg" class="insta-img" alt="Wedding Six">
+        </a>
+      </div>
 
-<div class="container-six">
-  <a href="https://www.instagram.com/jozifphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img class="instagram-logo" src="instagram-logo.jfif" alt="instagram-logo"></a>
-  <img class="whatsapp-logo" src="whatsapp-logo.png" alt="whatsapp-logo">
-  <br>
-  <h1>All content Copyright © 2025 jozif Photography</h1>
-</div>
+    </div>
+  </div>
 
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-      </body>
-    </html>
+</body>
+</html>
